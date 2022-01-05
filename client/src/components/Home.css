@@ -1,0 +1,60 @@
+.home-page {
+    height: 100vh;
+}
+.banner-img {
+    background-image: url('../images/sea.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 60vh;
+    opacity: 1;
+}
+
+.arrivals {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 1em;
+}
+@media only screen and (max-width: 600px) {
+    .arrivals {
+       
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media only screen and (max-width: 500px) {
+    .arrivals {
+       
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/* .arrivals {
+    display: grid;
+    grid-auto-flow: column;
+  justify-items: center;
+  justify-content: space-around;
+
+}
+.arrivals .card {
+    height: 100%;
+   
+}
+
+@media only screen and (max-width: 600px) {
+    .arrivals {
+        grid-auto-flow: unset;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .arrivals .card {
+        height: 80%;
+       
+    }
+}
+@media only screen and (max-width: 500px) {
+    .arrivals {
+       
+        grid-template-columns: 1fr;
+    }
+} */

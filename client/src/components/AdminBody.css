@@ -1,0 +1,18 @@
+.admin {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 1em;
+}
+@media only screen and (max-width: 600px) {
+    .admin {
+       
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media only screen and (max-width: 500px) {
+    .admin {
+       
+        grid-template-columns: 1fr;
+    }
+}
+

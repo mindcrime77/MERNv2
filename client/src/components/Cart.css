@@ -1,0 +1,139 @@
+.cart {
+    display: flex;
+    width: 100%;
+}
+.cart > div {
+    width: 50%;
+    padding: 1em;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border-right: 1px solid lightgray;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  td p {
+    margin: 0;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  border-bottom: 1px solid lightgray;
+  }
+
+  td img {
+    max-width: 110px;
+    max-height: 110px;
+  }
+
+  .cart-buttons {
+    display: flex;
+    position: absolute;
+    top:120px;
+    z-index: -1;
+    -webkit-animation: slide-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    
+  }
+
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: whitesmoke;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  .cart-history {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .cart-history h1 {
+    margin: 0;
+  }
+  .cart-history i:hover {
+    cursor: pointer;
+  }
+
+  .history-wrapper{
+    border:1px solid lightgray;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  @-webkit-keyframes slide-bottom {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(100px);
+              transform: translateY(100px);
+    }
+  }
+  @keyframes slide-bottom {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(100px);
+              transform: translateY(100px);
+    }
+  }
+
+  .cart-buttons button {
+    padding: 0.5em;
+    margin:0.5em;
+  }
+
+
+
+  @media only screen and (max-width: 900px) {
+    .cart {
+      flex-direction: column;
+    }
+    .cart > div {
+      width: 100%;
+      padding: 1em;
+  }
+  }
+

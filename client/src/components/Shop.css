@@ -1,0 +1,173 @@
+body { 
+    margin: 0;
+    background-color: #eee;
+  }
+section {
+    margin: 10px;
+}  
+  .jumbotron { 
+    padding: 30px; /* fills out the jumbotron */
+   
+    border-radius: 5px;
+    background-color:steelblue;
+  }
+
+  .jumbotron_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1170px; /* specify a width */
+    margin: 0 auto;  /* centers the container */
+    padding: 0 15px; /* adds some padding to the left and right*/
+  }
+  
+  .jumbotron .jumbotron_container { 
+    max-width: 100%; /* allows the jumbotron to adjust on smaller widths */
+   
+  }
+  .jumbotron_container button {
+    width: 10%;
+  
+  appearance: none;
+  background-color: #FAFBFC;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  box-sizing: border-box;
+  color: #24292E;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  padding: 6px 16px;
+  position: relative;
+  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: break-word;
+}
+
+.jumbotron_container button:hover {
+  background-color: #F3F4F6;
+  text-decoration: none;
+  transition-duration: 0.1s;
+}
+
+.jumbotron_container button:disabled {
+  background-color: #FAFBFC;
+  border-color: rgba(27, 31, 35, 0.15);
+  color: #959DA5;
+  cursor: default;
+}
+
+.jumbotron_container button:active {
+  background-color: #EDEFF2;
+  box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+  transition: none 0s;
+}
+
+.jumbotron_container button:focus {
+  outline: 1px transparent;
+}
+
+.jumbotron_container button:before {
+  display: none;
+}
+
+.jumbotron_container button:-webkit-details-marker {
+  display: none;
+}
+  
+  
+  .jumbotron h1 { 
+    text-align: center; /* centers the heading */
+    color: #DDD;
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .jumbotron_row {
+      display: flex;
+    }
+    .jumbotron_row_filters {
+        width: 33%;
+    }
+    .jumbotron_row_products {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-auto-rows: 1fr;
+        gap: 0.5em;
+    
+      
+    }
+    .jumbotron_row_products > div {
+     height: 90%;
+     width: 100%;
+     justify-self: stretch;
+    }
+
+  .jumbotron_search form {
+    display: flex;
+    margin: 0;
+    width: fit-content;
+  }  
+  .jumbotron_search button {
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    
+  }
+  .jumbotron_search input[type=text] {
+    padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  }
+  .jumbotron_checkbox {
+    display: flex;
+    flex-direction: column;
+    border-top:1px solid lightgrey;
+    border-bottom:1px solid lightgrey;
+    margin: 0.5em auto;
+  }
+  .jumbotron_checkbox > div {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    padding:0.3em;
+  }
+  .jumbotron_checkbox > div > label {
+    padding:0;
+    margin: 0;
+  }
+  @media only screen and (max-width: 1000px) {
+    .jumbotron_row_products {
+     
+      grid-template-columns: repeat(2,1fr);
+      grid-auto-rows: 1fr;
+    }
+    .jumbotron_row {
+      flex-direction: column;
+    }
+    .jumbotron_row_filters {
+      width: 100%;
+  }
+    
+  }
+  @media only screen and (max-width: 600px) {
+    .jumbotron_row_products {
+     
+      grid-template-columns:1fr;
+      grid-auto-rows: 1fr;
+    }
+    
+  }

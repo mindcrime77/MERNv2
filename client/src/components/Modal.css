@@ -1,0 +1,211 @@
+.modal {
+   
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    transform: translateY(12.5em);
+    display: flex;
+    flex-direction: column;
+
+    
+  }
+  .modal-content div {
+      border: 1px solid lightgrey;
+      border:none;
+  }
+  .modal-content .cat {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+  .modal-content .cat .cat_1,
+  .modal-content .cat .cat_2
+  {
+    display: block;
+    background-color: white;
+    color: black;
+}
+  .modal-content .title {
+      background-color: rgb(59, 152, 177);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+  .modal-content div:first-child i {
+      cursor: pointer;
+  }
+  .modal-content .category {
+    
+    border: none;
+  }
+  .modal-content div:nth-child(2) p {
+    margin: 0.8em;
+    border: none;
+  }
+.modal-content .modal-buttons {
+    display: flex;
+    justify-content: flex-end;
+   border:none;
+}
+
+.modal-history {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+padding: 1em;
+}
+.modal-history h3 {
+  margin: 0;
+}
+
+.usercart-section .usercart {
+  border: 1px solid lightgray;
+  margin: 2em 0;
+  border-radius: 5px;
+  width: 33%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.usercart-p {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  
+}
+
+
+.usercart {
+  position: relative;
+}
+#created {
+
+  position: absolute;
+  top:-22px;
+ 
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+/* CSS */
+.button-43 {
+  background-image: linear-gradient(-180deg, #37AEE2 0%, #1E96C8 100%);
+  border-radius: .5rem;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-size: 16px;
+  justify-content: center;
+  padding: 1rem 1.75rem;
+  text-decoration: none;
+  width: 100%;
+  border: 0;
+
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-43:hover {
+  background-image: linear-gradient(-180deg, #1D95C9 0%, #17759C 100%);
+}
+
+@media (min-width: 768px) {
+  .button-43 {
+    padding: 1rem 2rem;
+  }
+}
+
+
+
+
+/* CSS */
+.button-12 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px 14px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+  border-radius: 6px;
+  border: none;
+  margin-left: 0.5em;
+  margin-top: 0.5em;
+  background: #6E6D70;
+  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1), inset 0px 0.5px 0.5px rgba(255, 255, 255, 0.5), 0px 0px 0px 0.5px rgba(0, 0, 0, 0.12);
+  color: #DFDEDF;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-12:focus {
+  box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+  outline: 0;
+}
+
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+   .modal-content .loader {
+    margin: 1em auto;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+
+  
+  .alert {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    opacity: 1;
+    transition: opacity 0.6s;
+    margin-bottom: 15px;
+  }
+
+  .alert.success {background-color: #04AA6D;}
+  
+  
+
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }

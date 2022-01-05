@@ -1,0 +1,73 @@
+.dashboard_navbar {
+    background-color: rgb(3, 3, 3);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dashboard_left {
+
+  display: flex;
+  align-items: center;
+  
+}
+.dashboard_navbar h1 {
+    margin: 0;
+    font-style: italic;
+    padding: 14px 16px;
+}
+.dashboard_buttons {
+    background-color:lightgrey;
+    box-sizing: border-box;
+    padding: 1em;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+
+/* CSS */
+.dashboard_buttons .button-16 {
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+    width: 25%;
+  color: #3c4043;
+  cursor: pointer;
+  font-family: arial,sans-serif;
+  font-style: italic;
+  font-size: 14px;
+  height: 36px;
+  line-height: 27px;
+  min-width: 54px;
+  padding: 0 16px;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: pre;
+}
+
+.button-16:hover {
+  border-color: #dadce0;
+  box-shadow: rgba(0, 0, 0, .1) 0 1px 1px;
+  color: #202124;
+}
+
+.button-16:focus {
+  border-color: #4285f4;
+  outline: none;
+}
+@media only screen and (max-width: 600px){
+   .dashboard_buttons {
+       display: flex;
+       flex-direction: column;
+   
+       padding: 1em;
+   } 
+   .dashboard_buttons .button-16 {
+       margin: 0.5em;
+       width: 70%;
+   }
+}
