@@ -9,7 +9,7 @@ import Shop from './Shop'
 import Product from './Product'
 import AdminEditProduct from './AdminEditProduct'
 import UserDashboard from './UserDashboard'
-
+import Administration from './Administration'
 import { isAuth } from '../hellpers/auth'
 import { Navigate } from 'react-router-dom'
 import Cart from './Cart'
@@ -25,6 +25,7 @@ function Routes() {
         { path: '/product/:id', element: <Product /> },
         { path: '/user/dashboard', element: isAuth() ? (<UserDashboard />) : (<Navigate to='/signin' />) },
         { path: '/admin/dashboard', element: isAuth() ? (<AdminDashboard />) : (<Navigate to='/signin' />) },
+        { path: '/admin/administration', element: <Administration /> },
         { path: '/admin/edit/product/:productId', element: isAuth() ? (<AdminEditProduct />) : (<Navigate to='/signin' />) },
         { path: '*', element: <Notfound /> }
 

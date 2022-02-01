@@ -1,0 +1,29 @@
+.admin-user {
+    align-items: center;
+    justify-content: flex-start;
+   
+}
+.admin-user i:hover {
+    cursor: pointer;
+}
+.admin-user input {
+width: 70%;    
+}
+tr td {
+    width: 25%;
+}
+tr p:hover{
+    font-size: large;
+    font-style: italic;
+    font-size: x-large;
+    font-weight: bolder;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 5px;
+    cursor: pointer;
+}
+.admin-table {
+    margin: 2em 3em;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+

@@ -7,6 +7,7 @@ import categoryReducer from './reducers/categoryReducers'
 import productReducer from './reducers/productReducers'
 import { newArrivals } from '../redux/reducers/arrivalReducers'
 import { cartReducer, userCartReducer } from '../redux/reducers/cartReducers'
+import { getAllUsers } from '../redux/reducers/userReducers'
 
 const reducer = combineReducers({
     loading: loadingReducer,
@@ -15,7 +16,8 @@ const reducer = combineReducers({
     products: productReducer,
     filters: newArrivals,
     cart: cartReducer,
-    usercart: userCartReducer
+    usercart: userCartReducer,
+    users: getAllUsers
 })
 
 const initialState = {}

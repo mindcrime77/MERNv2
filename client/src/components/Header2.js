@@ -81,6 +81,13 @@ function Header2() {
                                 <i className="fa fa-envira" style={{ fontSize: '24px' }}></i> Dashboard
                             </Link>
                         </li>
+
+                        <li>
+                            <Link to='/admin/administration'>
+                                <i className="fa fa-envira" style={{ fontSize: '24px' }}></i> Administration
+                            </Link>
+                        </li>
+
                         <li>
 
                             <button onClick={handleLogout}>

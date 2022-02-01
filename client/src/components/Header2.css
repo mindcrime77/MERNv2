@@ -18,9 +18,9 @@ ul {
     padding: 14px 16px;
     text-decoration: none;
   }
-  li a:hover {
-    text-decoration: none;
-  }
+  li a:hover, a:active, a:visited, a:focus {
+    text-decoration:none;
+}
   
   .custom_badge {
     position: relative;
